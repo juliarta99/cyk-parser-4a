@@ -7,17 +7,17 @@
 
 ## Daftar Isi
 
-- [Tentang Aplikasi](#-tentang-aplikasi)
-- [Fitur Utama](#-fitur-utama)
-- [Teknologi](#-teknologi)
-- [Requirements](#-requirements)
-- [Instalasi](#-instalasi)
-- [Cara Menjalankan](#-cara-menjalankan)
-- [Struktur Project](#-struktur-project)
-- [Dataset & Kamus Kata](#-dataset--kamus-kata)
-- [Cara Kerja Algoritma](#-cara-kerja-algoritma)
-- [Contoh Penggunaan](#-contoh-penggunaan)
-- [Troubleshooting](#-troubleshooting)
+- [Tentang Aplikasi](#tentang-aplikasi)
+- [Fitur Utama](#fitur-utama)
+- [Teknologi](#teknologi)
+- [Requirements](#requirements)
+- [Instalasi](#instalasi)
+- [Cara Menjalankan](#cara-menjalankan)
+- [Struktur Project](#struktur-project)
+- [Dataset & Kamus Kata](#dataset--kamus-kata)
+- [Cara Kerja Algoritma](#cara-kerja-algoritma)
+- [Contoh Penggunaan](#contoh-penggunaan)
+- [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -102,7 +102,7 @@ File lengkap ada di `requirements.txt`
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/username/cyk-parser-bahasa-bali.git
+git clone https://github.com/juliarta99/cyk-parser-4a.git
 cd cyk-parser-bahasa-bali
 ```
 
@@ -522,8 +522,8 @@ pip install streamlit
 Untuk pertanyaan, saran, atau bug report:
 
 - **Email:** adij4255@gmail.com
-- **GitHub Issues:** [Create Issue](https://github.com/username/cyk-parser-bahasa-bali/issues)
-- **Discussion:** [GitHub Discussions](https://github.com/username/cyk-parser-bahasa-bali/discussions)
+- **GitHub Issues:** [Create Issue](https://github.com/juliarta99/cyk-parser-4a/issues)
+- **Discussion:** [GitHub Discussions](https://github.com/juliarta99/cyk-parser-4a/discussions)
 
 **Last Updated:** Januari 2026
 
@@ -531,4 +531,4 @@ Untuk pertanyaan, saran, atau bug report:
 
 Made with ❤️ by Kelompok 4A
 
-[Back to Top](#-cyk-parser---bahasa-bali-prepositional-phrase-validator)
+[Back to Top](#cyk-parser---bahasa-bali-prepositional-phrase-validator)
