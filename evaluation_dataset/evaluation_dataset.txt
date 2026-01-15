@@ -5,75 +5,75 @@
 # LABEL: VALID atau INVALID
 # ==========================================
 
-# PP [ K --> P S]
-VALID|Ring Jaba Tengah Gusti Ngurah
-VALID|Di Paon I Meme
-VALID|Ring pura I Nyoman
-VALID|Uli alas bet I Pekak
-VALID|Uli peken ia
-VALID|Saking Badung tiang
-VALID|Ring wantilan I Putu
-VALID|Uli alas I Gede
-VALID|Uli pasih i wayan
-VALID|Ring peken kuluk ento
-VALID|Di carik I Wayan
-VALID|Ring banjar I Bapa
+# PP [K --> P S]
+VALID|Ring Jaba Tengah Gusti Ngurah|P S
+VALID|Di Paon I Meme|P S
+VALID|Ring pura I Nyoman|P S
+VALID|Uli alas bet I Pekak|P S
+VALID|Uli peken ia|P S
+VALID|Saking Badung tiang|P S
+VALID|Ring wantilan I Putu|P S
+VALID|Uli alas I Gede|P S
+VALID|Uli pasih i wayan|P S
+VALID|Ring peken kuluk ento|P S
+VALID|Di carik I Wayan|P S
+VALID|Ring Banjar Sebita Sempidi I Bapa|P S
 
-# PP [ K --> P S Pel]
-VALID|Di Carik Lipi Gadang ne tetelu
-VALID|Ring Pura barong duwe punika
-VALID|Ring pura ento Gusti Ngurah pamangku
-VALID|Di carik sampi ne dadua
-VALID|Di tegal nyuh ne akutus
-VALID|Ring kantor I Wayan Sudra direktur
-VALID|Uli alas I Bapa padidi
-VALID|Di tukad bebek ne kutus
-VALID|Uli peken meme padidi
-VALID|Di jalan kuluk ne dadua
-VALID|Di Tukad ento Lipi ne dadua
-VALID|Di Paon duren ne lelima
+# PP [K --> X1 Pel]
+VALID|Di Carik Lipi Gadang ne tetelu|X1 Pel
+VALID|Ring Pura barong duwe lelima|X1 Pel
+VALID|Ring pura ento Gusti Ngurah pamangku|X1 Pel
+VALID|Di carik sampi ne dadua|X1 Pel
+VALID|Di tegal nyuh ne akutus|X1 Pel
+VALID|Ring kantor I Wayan Sudra direktur|X1 Pel
+VALID|Uli alas I Bapa padidi|X1 Pel
+VALID|Di tukad bebek ne kutus|X1 Pel
+VALID|Uli peken meme padidi|X1 Pel
+VALID|Di jalan kuluk ne dadua|X1 Pel
+VALID|Di Tukad ento Lipi ne dadua|X1 Pel
+VALID|Di Paon duren ne lelima|X1 Pel
 
-# PP [ K --> P Pel S]
-VALID|Uli Bandung Mobil I Made
-VALID|Ring Banjar Motor I Pekak
-VALID|Uli teba saang I Pekak
-VALID|Ring sanggah adiri I Putu
-VALID|Di bale kopi selem i bapa
-VALID|Di jumah ento liu anak gelem 
-VALID|Uli pasih dadua penyu ento
-VALID|Di peken liu dagange
-VALID|Uli sekolah motor i made
-VALID|Di banjar paruman i bapa
-VALID|Di peken liu dagang
-VALID|Di tegal ento dasa punyan biu ne
+# PP [K --> X2 S]
+VALID|Uli Bandung Mobil I Made|X2 S
+VALID|Ring Banjar Motor I Pekak|X2 S
+VALID|Uli teba saang I Pekak|X2 S
+VALID|Ring sanggah adiri I Putu|X2 S
+VALID|Di bale kopi selem i bapa|X2 S
+VALID|Di jumah ento liu anak gelem|X2 S
+VALID|Uli pasih dadua penyu ento|X2 S
+VALID|Di peken liu dagange|X2 S
+VALID|Uli sekolah motor i made|X2 S
+VALID|Di banjar paruman i bapa|X2 S
+VALID|Di peken liu dagang|X2 S
+VALID|Di tegal ento dasa punyan biu ne|X2 S
 
-# PP [ K --> P S Pel Ket]
-VALID|Ring pura pragina ne dasa dibi peteng
-VALID|Ring wantilan gangsa ne molas tuni semeng
-VALID|Di paon gas elpiji ne duang tabung jani
-VALID|Di sok ento duren ne dasa bungkul dibi
-VALID|Di kantong ento jinah ne dasa tali tuni
-VALID|Ring sanggah ne canang ento telu tanding tuni
-VALID|Di tegal nyuh ne akutus dibi
-VALID|Uli tegal biu ne atandan tuni
-VALID|Ring bokor kwangen ne lelima dibi semeng
-VALID|Di lapangan i putu padidi dibi semeng
-VALID|Ring sokasi bungane atanding dibi semeng
-VALID|Di pasih jukunge dadua tuni sanja
+# PP [K --> X1 X3]
+VALID|Ring pura pragina ne dasa dibi peteng|X1 X3
+VALID|Ring wantilan gangsa ne molas tuni semeng|X1 X3
+VALID|Di paon gas elpiji ne duang tabung jani|X1 X3
+VALID|Di sok ento duren ne dasa bungkul dibi|X1 X3
+VALID|Di kantong ento jinah ne dasa tali tuni|X1 X3
+VALID|Ring sanggah ne canang ento telu tanding tuni|X1 X3
+VALID|Di tegal nyuh ne akutus dibi|X1 X3
+VALID|Uli tegal biu ne atandan tuni|X1 X3
+VALID|Ring bokor kwangen ne lelima dibi semeng|X1 X3
+VALID|Di lapangan i putu padidi dibi semeng|X1 X3
+VALID|Ring sokasi bungane atanding dibi semeng|X1 X3
+VALID|Di pasih jukunge dadua tuni sanja|X1 X3
 
-# PP [ K --> P Pel S Ket]
-VALID|Di Kelas ento Paplajahan seni I Gede tuni semeng
-VALID|Di Bale ento solas banten ne dibi
-VALID|Uli dealer ento mobil sedan I Bapa dibi sanja
-VALID|Di kandang ento lelima sampi ne tuni
-VALID|Di jumah laptop wayan jani
-VALID|Ring paon akilo uyah ne jani
-VALID|Di ingka lelima jaja ne dibi sanja
-VALID|Di dompet dasa tali pipis ne dibi
-VALID|Di langit akeh bintang ne dibi peteng
-VALID|Di sekolah paruman i bapa tuni semeng
-VALID|Di kandang ento dadua lipi ne I Made dibi
-VALID|Di natah aijas biu ne I Dadong puan
+# PP [K --> X2 X4]
+VALID|Di Kelas ento Paplajahan seni I Gede tuni semeng|X2 X4
+VALID|Di Bale ento solas banten ne dibi|X2 X4
+VALID|Uli dealer ento mobil sedan I Bapa dibi sanja|X2 X4
+VALID|Di kandang ento lelima sampi ne tuni|X2 X4
+VALID|Di jumah laptop wayan jani|X2 X4
+VALID|Ring paon akilo uyah ne jani|X2 X4
+VALID|Di ingka lelima jaja ne dibi sanja|X2 X4
+VALID|Di dompet dasa tali pipis ne dibi|X2 X4
+VALID|Di langit akeh bintang ne dibi peteng|X2 X4
+VALID|Di sekolah paruman i bapa tuni semeng|X2 X4
+VALID|Di kandang ento dadua lipi ne I Made dibi|X2 X4
+VALID|Di natah aijas biu ne I Dadong puan|X2 X4
 
 # NumP
 INVALID|Duang dasa bungkul taluh siap di keranjang
