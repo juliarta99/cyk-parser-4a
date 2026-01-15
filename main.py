@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import general
-import grammar
 import cyk_process
 
 def analyze_sentence_components(node, words):
@@ -50,12 +49,12 @@ def analyze_sentence_components(node, words):
     return components
 
 st.set_page_config(
-    page_title="CYK - Prepositional Phrase", 
+    page_title="SEKEN App - CYK Prepositional Phrase", 
     layout="wide",
     initial_sidebar_state="collapsed"
 )
 
-st.title("Aplikasi Validasi Kalimat Bahasa Bali Berpedikat Frase Preposisi")
+st.title("SEKEN App - Aplikasi Validasi Kalimat Bahasa Bali Berpedikat Frase Preposisi")
 st.markdown("""
 Implementasi **Algoritma Cocke-Younger-Kasami (CYK)** untuk menganalisis struktur kalimat Bahasa Bali dalam bentuk **Chomsky Normal Form (CNF)**.
 """)
@@ -236,7 +235,6 @@ with st.sidebar:
     
     st.markdown("---")
     st.caption("Teori Bahasa dan Otomata")
-    st.caption("Sistem Parsing Bahasa Bali")
 
 st.markdown("---")
 st.caption("© 2026 - Kelompok 4A | Developed with Streamlit")
