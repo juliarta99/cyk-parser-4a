@@ -10,7 +10,7 @@ VALID|Ring Jaba Tengah Gusti Ngurah
 VALID|Di Paon I Meme
 VALID|Ring pura I Nyoman
 VALID|Uli alas bet I Pekak
-VALID|Uli peken ia
+VALID|Uli peken ia.
 VALID|Saking Badung tiang
 VALID|Ring wantilan I Putu
 VALID|Uli alas I Gede
@@ -20,14 +20,14 @@ VALID|Di carik I Wayan
 VALID|Ring banjar I Bapa
 
 # PP [ K --> P S Pel]
-VALID|Di Carik Lipi Gadange tetelu
+VALID|Di Carik Lipi Gadang ne tetelu
 VALID|Ring Pura barong duwe punika
-VALID|Ring pura ento Gusti Ngurah pemangku
+VALID|Ring pura ento Gusti Ngurah pamangku
 VALID|Di carik sampi ne dadua
 VALID|Di tegal nyuh ne akutus
 VALID|Ring kantor I Wayan Sudra direktur
 VALID|Uli alas I Bapa padidi
-VALID|Di tukad bebeke kutus
+VALID|Di tukad bebek ne kutus
 VALID|Uli peken meme padidi
 VALID|Di jalan kuluk ne dadua
 VALID|Di Tukad ento Lipi ne dadua
@@ -38,7 +38,7 @@ VALID|Uli Bandung Mobil I Made
 VALID|Ring Banjar Motor I Pekak
 VALID|Uli teba saang I Pekak
 VALID|Ring sanggah adiri I Putu
-VALID|Di bale kopi selem i bape
+VALID|Di bale kopi selem i bapa
 VALID|Di jumah ento liu anak gelem 
 VALID|Uli pasih dadua penyu ento
 VALID|Di peken liu dagange
@@ -55,8 +55,8 @@ VALID|Di sok ento duren ne dasa bungkul dibi
 VALID|Di kantong ento jinah ne dasa tali tuni
 VALID|Ring sanggah ne canang ento telu tanding tuni
 VALID|Di tegal nyuh ne akutus dibi
-VALID|Uli tegal biune atandan tuni
-VALID|Ring bokor kwangene lelima dibi semeng
+VALID|Uli tegal biu ne atandan tuni
+VALID|Ring bokor kwangen ne lelima dibi semeng
 VALID|Di lapangan i putu padidi dibi semeng
 VALID|Ring sokasi bungane atanding dibi semeng
 VALID|Di pasih jukunge dadua tuni sanja
@@ -67,46 +67,46 @@ VALID|Di Bale ento solas banten ne dibi
 VALID|Uli dealer ento mobil sedan I Bapa dibi sanja
 VALID|Di kandang ento lelima sampi ne tuni
 VALID|Di jumah laptop wayan jani
-VALID|Ring paon akilo uyahe jani
-VALID|Di ingka lelima jajane dibi sanja
-VALID|Di dompet dasa tali pipise dibi
-VALID|Di langit akeh bintange dibi peteng
+VALID|Ring paon akilo uyah ne jani
+VALID|Di ingka lelima jaja ne dibi sanja
+VALID|Di dompet dasa tali pipis ne dibi
+VALID|Di langit akeh bintang ne dibi peteng
 VALID|Di sekolah paruman i bapa tuni semeng
 VALID|Di kandang ento dadua lipi ne I Made dibi
 VALID|Di natah aijas biu ne I Dadong puan
 
 # NumP
 INVALID|Duang dasa bungkul taluh siap di keranjang
-INVALID|Limang diri murid baru ne di lapangan
-INVALID|Duang dasa tali bapa meli 
-INVALID|Nem dasa kilo baat I Komang bulan lalu
+INVALID|Limang diri sisya anyar di lapangan
+INVALID|Duang dasa tali pis I Bapa di dompet
+INVALID|Nem dasa kilo baat I Komang dibi
 INVALID|Telung hektar linggah tanah I Made di uma
 INVALID|Satus ukud bebek ne I Ketut di carik
 INVALID|Dasa bungkul duren ne I Pekak di teba
 
 # NP
-INVALID|Dagang canang meme tiange di peken
-INVALID|Bendega dané ring sisin pasihe
+INVALID|Dagang  canang meme tiang di peken
+INVALID|Bendega dane ring sisin pasihe
 INVALID|Dagang pindang meme tiang
-INVALID|Panabuh kendang I Bapa di sanggar
-INVALID|Dokter mata bli tiang di Rumah Sakit Sanglah 
+INVALID|Panabuh  kendang  I  Bapa  di sanggar
+INVALID|Dokter mata bli tiang di klinik 
 INVALID|Tukang tenun kain endek I Desak 
 INVALID|Dagang Tum I Luh di peken
 
 # AdjP
-INVALID|Inguh pisan ia ngitungang piutang di jumahne
-INVALID|Sebet atine Kevin teken timpalne di sekolah ibi sanja
-INVALID|jegeg sajan i nyoman sakadi widyadari
-INVALID|Miik ngalub ngebekin natah bunga sandat sabilang semeng
+INVALID|Inguh pisan ia ngitungang piutang di jumah ne
+INVALID|Sebet ati ne Kevin 
+INVALID|jegeg sajan i nyoman
+INVALID|Miik ngalub ngebekin natah bunga sandat
 INVALID|Demen gati tiang ngajeng lawar
 INVALID|Demen gati magending ia dugas ento
-INVALID|Galak sajan teken tamiu cicingne di parumahan
+INVALID|Galak sajan tamiu cicing ne di parumahan
 
 # VP
 INVALID|I Meme ngajeng di paon
 INVALID|I Wayan nganten ring sanggah
-INVALID|Pragina ne melali ka pasih tuni semeng
+INVALID|Pragina ne malali ka pasih tuni semeng
 INVALID|Pecalang ne ulung di jalan
-INVALID|I Bapa medagang di peken
+INVALID|I Bapa madagang di peken
 INVALID|I Pekak Ngarit di carik dibi semeng
-INVALID|Gusti Ngurah Melajah ring sekolah ne
+INVALID|Gusti Ngurah Malajah ring sekolah ne

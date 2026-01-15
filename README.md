@@ -152,7 +152,7 @@ Jika tidak terbuka otomatis, buka browser dan akses `http://localhost:8501`
 
 ---
 
-## 📁 Struktur Project
+## Struktur Project
 
 ```
 cyk-parser-bahasa-bali/
@@ -438,7 +438,7 @@ File JSON yang di-generate otomatis saat menjalankan `evaluation.py`.
 
 ---
 
-## 📚 Dataset & Kamus Kata
+## Dataset & Kamus Kata
 
 ### Lokasi: `alphabets/`
 

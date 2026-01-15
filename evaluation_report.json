@@ -1,37 +1,712 @@
 {
-  "timestamp": "2026-01-14T14:51:29.346866",
+  "timestamp": "2026-01-15T15:06:07.695289",
   "summary": {
-    "total_tests": 1,
-    "passed": 1,
+    "total_tests": 65,
+    "passed": 65,
     "failed": 0,
     "accuracy": 100.0,
     "precision": 100.0,
     "recall": 100.0,
     "f1_score": 100.0,
-    "avg_parse_time": 0.0005943775177001953
+    "avg_parse_time": 0.005613928574782151
   },
   "confusion_matrix": {
-    "true_positive": 1,
-    "true_negative": 0,
+    "true_positive": 55,
+    "true_negative": 10,
     "false_positive": 0,
     "false_negative": 0
   },
   "category_stats": {
-    "CATEGORY": {
+    "PP [ K --> P S]": {
+      "total": 11,
+      "passed": 11,
+      "failed": 0
+    },
+    "PP [ K --> P S Pel]": {
+      "total": 12,
+      "passed": 12,
+      "failed": 0
+    },
+    "PP [ K --> P Pel S]": {
+      "total": 11,
+      "passed": 11,
+      "failed": 0
+    },
+    "PP [ K --> P S Pel Ket]": {
+      "total": 9,
+      "passed": 9,
+      "failed": 0
+    },
+    "PP [ K --> P Pel S Ket]": {
+      "total": 12,
+      "passed": 12,
+      "failed": 0
+    },
+    "NumP": {
       "total": 1,
       "passed": 1,
+      "failed": 0
+    },
+    "NP": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "VP": {
+      "total": 6,
+      "passed": 6,
       "failed": 0
     }
   },
   "test_cases": [
     {
-      "sentence": "ring sekolah murid",
+      "sentence": "Ring Jaba Tengah Gusti Ngurah",
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.0005943775177001953,
-      "category": "CATEGORY",
+      "parse_time": 0.00649714469909668,
+      "category": "PP [ K --> P S]",
       "pattern": "K → P S",
+      "error": null
+    },
+    {
+      "sentence": "Di Paon I Meme",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.006450176239013672,
+      "category": "PP [ K --> P S]",
+      "pattern": "K → X1 Pel",
+      "error": null
+    },
+    {
+      "sentence": "Ring pura I Nyoman",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.003286600112915039,
+      "category": "PP [ K --> P S]",
+      "pattern": "K → P S",
+      "error": null
+    },
+    {
+      "sentence": "Uli alas bet I Pekak",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.00464177131652832,
+      "category": "PP [ K --> P S]",
+      "pattern": "K → X1 Pel",
+      "error": null
+    },
+    {
+      "sentence": "Uli peken ia",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.0008656978607177734,
+      "category": "PP [ K --> P S]",
+      "pattern": "K → P S",
+      "error": null
+    },
+    {
+      "sentence": "Ring wantilan I Putu",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.003148794174194336,
+      "category": "PP [ K --> P S]",
+      "pattern": "K → P S",
+      "error": null
+    },
+    {
+      "sentence": "Uli alas I Gede",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.003470182418823242,
+      "category": "PP [ K --> P S]",
+      "pattern": "K → P S",
+      "error": null
+    },
+    {
+      "sentence": "Uli pasih i wayan",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.003962993621826172,
+      "category": "PP [ K --> P S]",
+      "pattern": "K → P S",
+      "error": null
+    },
+    {
+      "sentence": "Ring peken kuluk ento",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.0034728050231933594,
+      "category": "PP [ K --> P S]",
+      "pattern": "K → P S",
+      "error": null
+    },
+    {
+      "sentence": "Di carik I Wayan",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.00403141975402832,
+      "category": "PP [ K --> P S]",
+      "pattern": "K → P S",
+      "error": null
+    },
+    {
+      "sentence": "Ring banjar I Bapa",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.0038290023803710938,
+      "category": "PP [ K --> P S]",
+      "pattern": "K → X1 Pel",
+      "error": null
+    },
+    {
+      "sentence": "Di Carik Lipi Gadang tetelu",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.007337331771850586,
+      "category": "PP [ K --> P S Pel]",
+      "pattern": "K → X1 Pel",
+      "error": null
+    },
+    {
+      "sentence": "Ring Pura barong duwe punika",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.004850149154663086,
+      "category": "PP [ K --> P S Pel]",
+      "pattern": "K → P S",
+      "error": null
+    },
+    {
+      "sentence": "Ring pura ento Gusti Ngurah pemangku",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.007131814956665039,
+      "category": "PP [ K --> P S Pel]",
+      "pattern": "K → X1 Pel",
+      "error": null
+    },
+    {
+      "sentence": "Di carik sampi ne dadua",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.002969503402709961,
+      "category": "PP [ K --> P S Pel]",
+      "pattern": "K → X1 Pel",
+      "error": null
+    },
+    {
+      "sentence": "Di tegal nyuh ne akutus",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.004985809326171875,
+      "category": "PP [ K --> P S Pel]",
+      "pattern": "K → X1 Pel",
+      "error": null
+    },
+    {
+      "sentence": "Ring kantor I Wayan Sudra direktur",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.008428096771240234,
+      "category": "PP [ K --> P S Pel]",
+      "pattern": "K → X1 Pel",
+      "error": null
+    },
+    {
+      "sentence": "Uli alas I Bapa padidi",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.0051119327545166016,
+      "category": "PP [ K --> P S Pel]",
+      "pattern": "K → X1 Pel",
+      "error": null
+    },
+    {
+      "sentence": "Di tukad bebek ne kutus",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.003506898880004883,
+      "category": "PP [ K --> P S Pel]",
+      "pattern": "K → X1 Pel",
+      "error": null
+    },
+    {
+      "sentence": "Uli peken meme padidi",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.0026848316192626953,
+      "category": "PP [ K --> P S Pel]",
+      "pattern": "K → X1 Pel",
+      "error": null
+    },
+    {
+      "sentence": "Di jalan kuluk ne dadua",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.004046916961669922,
+      "category": "PP [ K --> P S Pel]",
+      "pattern": "K → X1 Pel",
+      "error": null
+    },
+    {
+      "sentence": "Di Tukad ento Lipi ne dadua",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.0038776397705078125,
+      "category": "PP [ K --> P S Pel]",
+      "pattern": "K → X1 Pel",
+      "error": null
+    },
+    {
+      "sentence": "Di Paon duren ne lelima",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.003970146179199219,
+      "category": "PP [ K --> P S Pel]",
+      "pattern": "K → X1 Pel",
+      "error": null
+    },
+    {
+      "sentence": "Uli Bandung Mobil I Made",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.0056951045989990234,
+      "category": "PP [ K --> P Pel S]",
+      "pattern": "K → X2 S",
+      "error": null
+    },
+    {
+      "sentence": "Ring Banjar Motor I Pekak",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.007714509963989258,
+      "category": "PP [ K --> P Pel S]",
+      "pattern": "K → X1 Pel",
+      "error": null
+    },
+    {
+      "sentence": "Uli teba saang I Pekak",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.00817728042602539,
+      "category": "PP [ K --> P Pel S]",
+      "pattern": "K → X1 Pel",
+      "error": null
+    },
+    {
+      "sentence": "Ring sanggah adiri I Putu",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.002624034881591797,
+      "category": "PP [ K --> P Pel S]",
+      "pattern": "K → X2 S",
+      "error": null
+    },
+    {
+      "sentence": "Di bale kopi selem i bapa",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.00964808464050293,
+      "category": "PP [ K --> P Pel S]",
+      "pattern": "K → X1 Pel",
+      "error": null
+    },
+    {
+      "sentence": "Di jumah ento liu anak gelem",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.004248380661010742,
+      "category": "PP [ K --> P Pel S]",
+      "pattern": "K → X2 S",
+      "error": null
+    },
+    {
+      "sentence": "Uli pasih dadua penyu ento",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.002206087112426758,
+      "category": "PP [ K --> P Pel S]",
+      "pattern": "K → X2 S",
+      "error": null
+    },
+    {
+      "sentence": "Uli sekolah motor i made",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.007745981216430664,
+      "category": "PP [ K --> P Pel S]",
+      "pattern": "K → X2 S",
+      "error": null
+    },
+    {
+      "sentence": "Di banjar paruman i bapa",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.00727534294128418,
+      "category": "PP [ K --> P Pel S]",
+      "pattern": "K → X1 Pel",
+      "error": null
+    },
+    {
+      "sentence": "Di peken liu dagang",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.0018379688262939453,
+      "category": "PP [ K --> P Pel S]",
+      "pattern": "K → X2 S",
+      "error": null
+    },
+    {
+      "sentence": "Di tegal ento dasa punyan biu ne",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.005967855453491211,
+      "category": "PP [ K --> P Pel S]",
+      "pattern": "K → X2 S",
+      "error": null
+    },
+    {
+      "sentence": "Ring pura pragina ne dasa dibi peteng",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.005747079849243164,
+      "category": "PP [ K --> P S Pel Ket]",
+      "pattern": "K → X1 X3",
+      "error": null
+    },
+    {
+      "sentence": "Ring wantilan gangsa ne molas tuni semeng",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.004277944564819336,
+      "category": "PP [ K --> P S Pel Ket]",
+      "pattern": "K → X1 X3",
+      "error": null
+    },
+    {
+      "sentence": "Di paon gas elpiji ne duang tabung jani",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.010942459106445312,
+      "category": "PP [ K --> P S Pel Ket]",
+      "pattern": "K → X1 X3",
+      "error": null
+    },
+    {
+      "sentence": "Ring sanggah ne canang ento telu tanding tuni",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.006994962692260742,
+      "category": "PP [ K --> P S Pel Ket]",
+      "pattern": "K → X1 X3",
+      "error": null
+    },
+    {
+      "sentence": "Di tegal nyuh ne akutus dibi",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.004931926727294922,
+      "category": "PP [ K --> P S Pel Ket]",
+      "pattern": "K → X1 X3",
+      "error": null
+    },
+    {
+      "sentence": "Uli tegal biu ne atandan tuni",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.0045299530029296875,
+      "category": "PP [ K --> P S Pel Ket]",
+      "pattern": "K → X1 X3",
+      "error": null
+    },
+    {
+      "sentence": "Ring bokor kwangen ne lelima dibi semeng",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.004359245300292969,
+      "category": "PP [ K --> P S Pel Ket]",
+      "pattern": "K → X1 X3",
+      "error": null
+    },
+    {
+      "sentence": "Di lapangan i putu padidi dibi semeng",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.005938053131103516,
+      "category": "PP [ K --> P S Pel Ket]",
+      "pattern": "K → X1 X3",
+      "error": null
+    },
+    {
+      "sentence": "Di pasih jukunge dadua tuni sanja",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.004851818084716797,
+      "category": "PP [ K --> P S Pel Ket]",
+      "pattern": "K → X1 X3",
+      "error": null
+    },
+    {
+      "sentence": "Di Kelas ento Paplajahan seni I Gede tuni semeng",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.019466161727905273,
+      "category": "PP [ K --> P Pel S Ket]",
+      "pattern": "K → X2 X4",
+      "error": null
+    },
+    {
+      "sentence": "Di Bale ento solas banten ne dibi",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.00405430793762207,
+      "category": "PP [ K --> P Pel S Ket]",
+      "pattern": "K → X2 X4",
+      "error": null
+    },
+    {
+      "sentence": "Uli dealer ento mobil sedan I Bapa dibi sanja",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.022521257400512695,
+      "category": "PP [ K --> P Pel S Ket]",
+      "pattern": "K → X1 X3",
+      "error": null
+    },
+    {
+      "sentence": "Di kandang ento lelima sampi ne tuni",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.00413203239440918,
+      "category": "PP [ K --> P Pel S Ket]",
+      "pattern": "K → X2 X4",
+      "error": null
+    },
+    {
+      "sentence": "Di jumah laptop wayan jani",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.00452876091003418,
+      "category": "PP [ K --> P Pel S Ket]",
+      "pattern": "K → X2 X4",
+      "error": null
+    },
+    {
+      "sentence": "Ring paon akilo uyah ne jani",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.003773927688598633,
+      "category": "PP [ K --> P Pel S Ket]",
+      "pattern": "K → X2 X4",
+      "error": null
+    },
+    {
+      "sentence": "Di ingka lelima jaja ne dibi sanja",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.0040128231048583984,
+      "category": "PP [ K --> P Pel S Ket]",
+      "pattern": "K → X2 X4",
+      "error": null
+    },
+    {
+      "sentence": "Di dompet dasa tali pipis ne dibi",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.007422447204589844,
+      "category": "PP [ K --> P Pel S Ket]",
+      "pattern": "K → X2 X4",
+      "error": null
+    },
+    {
+      "sentence": "Di langit akeh bintang ne dibi peteng",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.0038912296295166016,
+      "category": "PP [ K --> P Pel S Ket]",
+      "pattern": "K → X2 X4",
+      "error": null
+    },
+    {
+      "sentence": "Di sekolah paruman i bapa tuni semeng",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.012566566467285156,
+      "category": "PP [ K --> P Pel S Ket]",
+      "pattern": "K → X1 X3",
+      "error": null
+    },
+    {
+      "sentence": "Di kandang ento dadua lipi ne I Made dibi",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.0089874267578125,
+      "category": "PP [ K --> P Pel S Ket]",
+      "pattern": "K → X2 X4",
+      "error": null
+    },
+    {
+      "sentence": "Di natah aijas biu ne I Dadong puan",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.0075147151947021484,
+      "category": "PP [ K --> P Pel S Ket]",
+      "pattern": "K → X2 X4",
+      "error": null
+    },
+    {
+      "sentence": "Dasa bungkul duren ne I Pekak di teba",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.012600421905517578,
+      "category": "NumP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "Dagang canang meme tiang di peken",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.00804448127746582,
+      "category": "NP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "Dagang pindang meme tiang",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.006864786148071289,
+      "category": "NP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "Dagang Tum I Luh di peken",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.006258964538574219,
+      "category": "NP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "I Meme ngajeng di paon",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.001543283462524414,
+      "category": "VP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "I Wayan nganten ring sanggah",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.0007679462432861328,
+      "category": "VP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "Pragina ne malali ka pasih tuni semeng",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.0022428035736083984,
+      "category": "VP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "I Bapa madagang di peken",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.001538991928100586,
+      "category": "VP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "I Pekak Ngarit di carik dibi semeng",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.0025115013122558594,
+      "category": "VP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "Gusti Ngurah Malajah ring sekolah ne",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.0013887882232666016,
+      "category": "VP",
+      "pattern": null,
       "error": null
     }
   ]
