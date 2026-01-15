@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-01-14T14:51:29.346866",
+  "summary": {
+    "total_tests": 1,
+    "passed": 1,
+    "failed": 0,
+    "accuracy": 100.0,
+    "precision": 100.0,
+    "recall": 100.0,
+    "f1_score": 100.0,
+    "avg_parse_time": 0.0005943775177001953
+  },
+  "confusion_matrix": {
+    "true_positive": 1,
+    "true_negative": 0,
+    "false_positive": 0,
+    "false_negative": 0
+  },
+  "category_stats": {
+    "CATEGORY": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    }
+  },
+  "test_cases": [
+    {
+      "sentence": "ring sekolah murid",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.0005943775177001953,
+      "category": "CATEGORY",
+      "pattern": "K → P S",
+      "error": null
+    }
+  ]
+}

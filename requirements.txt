@@ -1,0 +1,10 @@
+# ==========================================
+# SEKEN App - CYK Parser Bahasa Bali Requirements
+# ==========================================
+
+# Core Framework
+streamlit>=1.28.0
+
+# Data Processing
+pandas>=1.5.0
+numpy>=1.24.0

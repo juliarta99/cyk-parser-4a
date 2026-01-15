@@ -152,31 +152,36 @@ Jika tidak terbuka otomatis, buka browser dan akses `http://localhost:8501`
 
 ---
 
-## Struktur Project
+## 📁 Struktur Project
 
 ```
 cyk-parser-bahasa-bali/
 │
-├── 📄 main.py                   # Main application (Streamlit UI)
-├── 📄 cyk_process.py            # CYK Algorithm implementation
-├── 📄 grammar.py                # Grammar rules (CNF)
-├── 📄 general.py                # Lexicon loader & validator
+├── 📄 main.py                       # Main application (Streamlit UI)
+├── 📄 cyk_process.py                # CYK Algorithm implementation
+├── 📄 grammar.py                    # Grammar rules (CNF)
+├── 📄 general.py                    # Lexicon loader & validator
+├── 📄 evaluation.py                 # Modul evaluasi sistem
 │
-├── 📂 alphabets/                # Dataset kamus kata
-│   ├── noun.txt                 # Kata benda
-│   ├── verb.txt                 # Kata kerja
-│   ├── adj.txt                  # Kata sifat
-│   ├── prep.txt                 # Kata preposisi
-│   ├── pronoun.txt              # Kata ganti
-│   ├── propnoun.txt             # Nama diri
-│   ├── det.txt                  # Determiner
-│   ├── num.txt                  # Numeralia
-│   ├── adv.txt                  # Adverbia
-│   └── nountime.txt             # Kata benda waktu
+├── 📂 alphabets/                    # Dataset kamus kata
+│   ├── noun.txt                     # Kata benda
+│   ├── verb.txt                     # Kata kerja
+│   ├── adj.txt                      # Kata sifat
+│   ├── prep.txt                     # Kata preposisi
+│   ├── pronoun.txt                  # Kata ganti
+│   ├── propnoun.txt                 # Nama diri
+│   ├── det.txt                      # Determiner
+│   ├── num.txt                      # Numeralia
+│   ├── adv.txt                      # Adverbia
+│   └── nountime.txt                 # Kata benda waktu
 │
-├── 📄 requirements.txt          # Python dependencies
-├── 📄 README.md                 # Dokumentasi ini
-└── 📄 .gitignore                # Git ignore rules
+├── 📂 evaluation_dataset/           # Dataset untuk testing
+│   └── evaluation_dataset.txt       # Test cases (LABEL|KALIMAT)
+│
+├── 📄 evaluation_report.json        # Hasil evaluasi (generated)
+├── 📄 requirements.txt              # Python dependencies
+├── 📄 README.md                     # Dokumentasi ini
+└── 📄 .gitignore                    # Git ignore rules
 ```
 
 ---
@@ -187,6 +192,7 @@ cyk-parser-bahasa-bali/
 
 File utama aplikasi Streamlit yang menangani:
 - User interface dan input handling
+- Workflow parsing (validasi → CYK → analisis)
 - Visualisasi hasil (tabel, parse tree, komponen)
 - Error handling dan feedback
 
@@ -195,6 +201,11 @@ File utama aplikasi Streamlit yang menangani:
 - Tokenisasi dan validasi kata
 - Trigger CYK parsing
 - Display hasil analisis
+
+**Cara Menjalankan:**
+```bash
+streamlit run main.py
+```
 
 ---
 
@@ -208,7 +219,7 @@ Implementasi algoritma Cocke-Younger-Kasami untuk parsing.
 |--------|-----------|
 | `cyk_parse(words)` | Algoritma CYK utama, return table & backpointer |
 | `create_table(n)` | Membuat tabel n×n kosong |
-| `get_combinations(set_a, set_b)` | Gabungkan 2 set untuk aturan A ke BC |
+| `get_combinations(set_a, set_b)` | Gabungkan 2 set untuk aturan A→BC |
 | `is_valid_sentence()` | Cek apakah kalimat valid |
 | `build_parse_tree()` | Rekonstruksi parse tree dari backpointer |
 | `get_sentence_pattern()` | Analisis pola kalimat |
@@ -265,9 +276,9 @@ Manajemen kamus kata dan validasi input.
 
 **Kamus Kata:**
 ```python
-kata_benda = ["rumah", "sekolah", ...]
-kata_preposisi = ["di", "ring", "ke", ...]
-kata_benda_waktu = ["pagi", "siang", "hari", ...]
+kata_benda = ["paon", "jumah", ...]
+kata_preposisi = ["ring", "ka", ...]
+kata_benda_waktu = ["dibi", "tuni", ...]
 # ... dll
 
 alphabet = kata_benda + kata_preposisi + ... # Master dictionary
@@ -278,7 +289,156 @@ Semua file di folder `alphabets/` otomatis dimuat saat `import general`
 
 ---
 
-## Dataset & Kamus Kata
+### **5. `evaluation.py` - Modul Evaluasi**
+
+Sistem evaluasi otomatis untuk testing parser dengan metrics lengkap.
+
+**Fitur:**
+- Load dataset dari file txt
+- Testing otomatis semua test cases
+- Hitung metrics: Accuracy, Precision, Recall, F1 Score
+- Generate confusion matrix
+- Export hasil ke JSON
+- Verbose output (print setiap test case)
+
+**Cara Menjalankan:**
+```bash
+# Dengan dataset default
+python evaluation.py
+
+# Dengan custom dataset
+python evaluation.py path/to/dataset.txt
+```
+
+**Output:**
+- Console: Summary lengkap dengan metrics
+- File: `evaluation_report.json`
+
+**Metrics Yang Dihitung:**
+
+| Metric | Formula | Interpretasi |
+|--------|---------|--------------|
+| **Accuracy** | (TP+TN)/Total × 100% | Persentase prediksi benar |
+| **Precision** | TP/(TP+FP) × 100% | Ketepatan prediksi VALID |
+| **Recall** | TP/(TP+FN) × 100% | Kelengkapan deteksi VALID |
+| **F1 Score** | 2×(P×R)/(P+R) | Balance precision & recall |
+
+---
+
+### **6. `evaluation_dataset/` - Folder Dataset Testing**
+
+Berisi file dataset untuk evaluasi sistem.
+
+**Struktur:**
+```
+evaluation_dataset/
+└── evaluation_dataset.txt    # Test cases
+```
+
+**Format File: `evaluation_dataset.txt`**
+
+Format sederhana tanpa deskripsi:
+```
+LABEL|KALIMAT
+```
+
+**Contoh:**
+```txt
+# POLA DASAR
+VALID|ring sekolah murid
+VALID|ring rumah anak
+
+# INVALID - TIDAK ADA PREPOSISI
+INVALID|murid buku sekolah
+INVALID|anak makanan rumah
+```
+
+**Aturan:**
+- **LABEL**: VALID atau INVALID
+- **KALIMAT**: Kalimat Bahasa Bali
+- **Separator**: Pipe (`|`)
+- **Comment**: Baris dengan `#` = nama kategori
+
+**Statistik Dataset:**
+- Total: ~90 test cases
+- VALID: ~55 cases (61%)
+- INVALID: ~35 cases (39%)
+- Categories: 15+ kategori berbeda
+
+---
+
+### **7. `evaluation_report.json` - Hasil Evaluasi**
+
+File JSON yang di-generate otomatis saat menjalankan `evaluation.py`.
+
+**Struktur:**
+```json
+{
+  "timestamp": "2026-01-14T...",
+  "summary": {
+    "total_tests": 90,
+    "passed": 85,
+    "failed": 5,
+    "accuracy": 94.44,
+    "precision": 96.30,
+    "recall": 92.86,
+    "f1_score": 94.55,
+    "avg_parse_time": 0.0023
+  },
+  "confusion_matrix": {
+    "true_positive": 52,
+    "true_negative": 33,
+    "false_positive": 2,
+    "false_negative": 3
+  },
+  "category_stats": {
+    "POLA DASAR": {
+      "total": 8,
+      "passed": 8,
+      "failed": 0
+    },
+    ...
+  },
+  "test_cases": [
+    {
+      "sentence": "ring sekolah murid",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.0015,
+      "category": "POLA DASAR",
+      "pattern": "K → P S",
+      "error": null
+    },
+    ...
+  ]
+}
+```
+
+**Kegunaan:**
+- Analisis mendalam hasil evaluasi
+- Tracking performa dari waktu ke waktu
+- Input untuk visualisasi/grafik
+- Dokumentasi untuk laporan
+
+---
+
+**File yang di-ignore:**
+- Python cache (`__pycache__/`)
+- Virtual environment (`venv/`)
+- IDE config (`.vscode/`, `.idea/`)
+- OS files (`.DS_Store`)
+- Temporary files (`*.swp`, `*.log`)
+
+**File yang di-track:**
+- Source code (`.py`)
+- Dataset (`alphabets/`, `evaluation_dataset/`)
+- Documentation (`README.md`)
+- Dependencies (`requirements.txt`)
+
+---
+
+## 📚 Dataset & Kamus Kata
 
 ### Lokasi: `alphabets/`
 
@@ -286,18 +446,18 @@ Dataset berisi kamus kata Bahasa Bali yang dikategorikan berdasarkan **Part of S
 
 ### Struktur Dataset
 
-| File | Kategori | Contoh Kata | Jumlah (approx) |
-|------|----------|-------------|-----------------|
-| **noun.txt** | Kata Benda | paon, carik | 100+ |
+| File | Kategori | Contoh Kata | Jumlah |
+|------|----------|-------------|--------|
+| **noun.txt** | Kata Benda | paon, jumah, carik | 100+ |
 | **verb.txt** | Kata Kerja | malajah, majalan | 50+ |
 | **adj.txt** | Kata Sifat | jegeg, gede, cenik | 50+ |
 | **prep.txt** | Preposisi | ring, ka | 10+ |
-| **pronoun.txt** | Kata Ganti | ia, tiang | 20+ |
+| **pronoun.txt** | Kata Ganti | ia, tiang, ipun | 20+ |
 | **propnoun.txt** | Nama Diri | Bali, Jakarta, Made | 30+ |
-| **det.txt** | Determiner | ento, -ne, -e | 10+ |
+| **det.txt** | Determiner | ento, ne | 10+ |
 | **num.txt** | Numeralia | lelima, dadua, adiri | 20+ |
 | **adv.txt** | Adverbia | sesai, cepok | 20+ |
-| **nountime.txt** | Kata Waktu | dibi, tuni| 30+ |
+| **nountime.txt** | Kata Waktu | dibi, tuni, semeng | 30+ |
 
 ### Format File
 
@@ -326,9 +486,11 @@ banjar
 **Contoh:**
 ```txt
 # alphabets/noun.txt
+paon
+jumah
 carik
 banjar
-kandang  ← kata baru ditambahkan
+kandang  ← kata baru
 ```
 
 ---

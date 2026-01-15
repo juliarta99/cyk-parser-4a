@@ -166,24 +166,3 @@ def check_symbol(array):
         if i in start_symbol:
             return True
     return False
-
-def print_grammar_info():
-    """
-    Mencetak informasi tentang grammar untuk debugging
-    """
-    print("\n========================================")
-    print("INFORMASI GRAMMAR CNF")
-    print("========================================")
-    print(f"Jumlah Variabel: {len(variable)}")
-    print(f"Start Symbol: {start_symbol[0]}")
-    print(f"Jumlah Aturan Produksi: {sum(len(v) for v in production.values())}")
-    print("\n📋 Struktur Kalimat Utama:")
-    for rule in production.get("K", []):
-        print(f"  K -> {rule}")
-    print("\n📋 Intermediate Variables:")
-    for rule in production.get("K@$@P", []):
-        print(f"  K@$@P -> {rule}")
-    print("\n✅ Grammar siap digunakan!")
-
-if __name__ == "__main__":
-    print_grammar_info()
