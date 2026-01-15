@@ -1,25 +1,25 @@
 {
-  "timestamp": "2026-01-15T15:06:07.695289",
+  "timestamp": "2026-01-15T15:29:00.856979",
   "summary": {
-    "total_tests": 65,
-    "passed": 65,
+    "total_tests": 88,
+    "passed": 88,
     "failed": 0,
     "accuracy": 100.0,
     "precision": 100.0,
     "recall": 100.0,
     "f1_score": 100.0,
-    "avg_parse_time": 0.005613928574782151
+    "avg_parse_time": 0.006071472709829157
   },
   "confusion_matrix": {
-    "true_positive": 55,
-    "true_negative": 10,
+    "true_positive": 60,
+    "true_negative": 28,
     "false_positive": 0,
     "false_negative": 0
   },
   "category_stats": {
     "PP [ K --> P S]": {
-      "total": 11,
-      "passed": 11,
+      "total": 12,
+      "passed": 12,
       "failed": 0
     },
     "PP [ K --> P S Pel]": {
@@ -28,13 +28,13 @@
       "failed": 0
     },
     "PP [ K --> P Pel S]": {
-      "total": 11,
-      "passed": 11,
+      "total": 12,
+      "passed": 12,
       "failed": 0
     },
     "PP [ K --> P S Pel Ket]": {
-      "total": 9,
-      "passed": 9,
+      "total": 12,
+      "passed": 12,
       "failed": 0
     },
     "PP [ K --> P Pel S Ket]": {
@@ -43,18 +43,23 @@
       "failed": 0
     },
     "NumP": {
-      "total": 1,
-      "passed": 1,
+      "total": 7,
+      "passed": 7,
       "failed": 0
     },
     "NP": {
-      "total": 3,
-      "passed": 3,
+      "total": 7,
+      "passed": 7,
+      "failed": 0
+    },
+    "AdjP": {
+      "total": 7,
+      "passed": 7,
       "failed": 0
     },
     "VP": {
-      "total": 6,
-      "passed": 6,
+      "total": 7,
+      "passed": 7,
       "failed": 0
     }
   },
@@ -64,7 +69,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.00649714469909668,
+      "parse_time": 0.0067424774169921875,
       "category": "PP [ K --> P S]",
       "pattern": "K → P S",
       "error": null
@@ -74,9 +79,9 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.006450176239013672,
+      "parse_time": 0.004870414733886719,
       "category": "PP [ K --> P S]",
-      "pattern": "K → X1 Pel",
+      "pattern": "K → P S",
       "error": null
     },
     {
@@ -84,7 +89,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.003286600112915039,
+      "parse_time": 0.005609273910522461,
       "category": "PP [ K --> P S]",
       "pattern": "K → P S",
       "error": null
@@ -94,9 +99,9 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.00464177131652832,
+      "parse_time": 0.005179643630981445,
       "category": "PP [ K --> P S]",
-      "pattern": "K → X1 Pel",
+      "pattern": "K → P S",
       "error": null
     },
     {
@@ -104,7 +109,17 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.0008656978607177734,
+      "parse_time": 0.001111745834350586,
+      "category": "PP [ K --> P S]",
+      "pattern": "K → P S",
+      "error": null
+    },
+    {
+      "sentence": "Saking Badung tiang",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.0012776851654052734,
       "category": "PP [ K --> P S]",
       "pattern": "K → P S",
       "error": null
@@ -114,7 +129,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.003148794174194336,
+      "parse_time": 0.003150463104248047,
       "category": "PP [ K --> P S]",
       "pattern": "K → P S",
       "error": null
@@ -124,7 +139,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.003470182418823242,
+      "parse_time": 0.004201412200927734,
       "category": "PP [ K --> P S]",
       "pattern": "K → P S",
       "error": null
@@ -134,7 +149,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.003962993621826172,
+      "parse_time": 0.0044214725494384766,
       "category": "PP [ K --> P S]",
       "pattern": "K → P S",
       "error": null
@@ -144,7 +159,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.0034728050231933594,
+      "parse_time": 0.0026810169219970703,
       "category": "PP [ K --> P S]",
       "pattern": "K → P S",
       "error": null
@@ -154,7 +169,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.00403141975402832,
+      "parse_time": 0.0048675537109375,
       "category": "PP [ K --> P S]",
       "pattern": "K → P S",
       "error": null
@@ -164,17 +179,17 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.0038290023803710938,
+      "parse_time": 0.004801750183105469,
       "category": "PP [ K --> P S]",
-      "pattern": "K → X1 Pel",
+      "pattern": "K → P S",
       "error": null
     },
     {
-      "sentence": "Di Carik Lipi Gadang tetelu",
+      "sentence": "Di Carik Lipi Gadang ne tetelu",
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.007337331771850586,
+      "parse_time": 0.008448123931884766,
       "category": "PP [ K --> P S Pel]",
       "pattern": "K → X1 Pel",
       "error": null
@@ -184,17 +199,17 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.004850149154663086,
+      "parse_time": 0.004944324493408203,
       "category": "PP [ K --> P S Pel]",
       "pattern": "K → P S",
       "error": null
     },
     {
-      "sentence": "Ring pura ento Gusti Ngurah pemangku",
+      "sentence": "Ring pura ento Gusti Ngurah pamangku",
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.007131814956665039,
+      "parse_time": 0.006680488586425781,
       "category": "PP [ K --> P S Pel]",
       "pattern": "K → X1 Pel",
       "error": null
@@ -204,7 +219,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.002969503402709961,
+      "parse_time": 0.00404667854309082,
       "category": "PP [ K --> P S Pel]",
       "pattern": "K → X1 Pel",
       "error": null
@@ -214,7 +229,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.004985809326171875,
+      "parse_time": 0.004094839096069336,
       "category": "PP [ K --> P S Pel]",
       "pattern": "K → X1 Pel",
       "error": null
@@ -224,7 +239,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.008428096771240234,
+      "parse_time": 0.009863615036010742,
       "category": "PP [ K --> P S Pel]",
       "pattern": "K → X1 Pel",
       "error": null
@@ -234,7 +249,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.0051119327545166016,
+      "parse_time": 0.005199432373046875,
       "category": "PP [ K --> P S Pel]",
       "pattern": "K → X1 Pel",
       "error": null
@@ -244,7 +259,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.003506898880004883,
+      "parse_time": 0.003366231918334961,
       "category": "PP [ K --> P S Pel]",
       "pattern": "K → X1 Pel",
       "error": null
@@ -254,7 +269,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.0026848316192626953,
+      "parse_time": 0.003989219665527344,
       "category": "PP [ K --> P S Pel]",
       "pattern": "K → X1 Pel",
       "error": null
@@ -264,7 +279,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.004046916961669922,
+      "parse_time": 0.003299236297607422,
       "category": "PP [ K --> P S Pel]",
       "pattern": "K → X1 Pel",
       "error": null
@@ -274,7 +289,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.0038776397705078125,
+      "parse_time": 0.004648923873901367,
       "category": "PP [ K --> P S Pel]",
       "pattern": "K → X1 Pel",
       "error": null
@@ -284,7 +299,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.003970146179199219,
+      "parse_time": 0.00675511360168457,
       "category": "PP [ K --> P S Pel]",
       "pattern": "K → X1 Pel",
       "error": null
@@ -294,7 +309,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.0056951045989990234,
+      "parse_time": 0.006868124008178711,
       "category": "PP [ K --> P Pel S]",
       "pattern": "K → X2 S",
       "error": null
@@ -304,7 +319,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.007714509963989258,
+      "parse_time": 0.01058816909790039,
       "category": "PP [ K --> P Pel S]",
       "pattern": "K → X1 Pel",
       "error": null
@@ -314,7 +329,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.00817728042602539,
+      "parse_time": 0.007993936538696289,
       "category": "PP [ K --> P Pel S]",
       "pattern": "K → X1 Pel",
       "error": null
@@ -324,7 +339,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.002624034881591797,
+      "parse_time": 0.003407716751098633,
       "category": "PP [ K --> P Pel S]",
       "pattern": "K → X2 S",
       "error": null
@@ -334,7 +349,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.00964808464050293,
+      "parse_time": 0.008948802947998047,
       "category": "PP [ K --> P Pel S]",
       "pattern": "K → X1 Pel",
       "error": null
@@ -344,7 +359,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.004248380661010742,
+      "parse_time": 0.0032148361206054688,
       "category": "PP [ K --> P Pel S]",
       "pattern": "K → X2 S",
       "error": null
@@ -354,7 +369,17 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.002206087112426758,
+      "parse_time": 0.002624034881591797,
+      "category": "PP [ K --> P Pel S]",
+      "pattern": "K → X2 S",
+      "error": null
+    },
+    {
+      "sentence": "Di peken liu dagange",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.001940011978149414,
       "category": "PP [ K --> P Pel S]",
       "pattern": "K → X2 S",
       "error": null
@@ -364,7 +389,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.007745981216430664,
+      "parse_time": 0.007701873779296875,
       "category": "PP [ K --> P Pel S]",
       "pattern": "K → X2 S",
       "error": null
@@ -374,7 +399,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.00727534294128418,
+      "parse_time": 0.00954890251159668,
       "category": "PP [ K --> P Pel S]",
       "pattern": "K → X1 Pel",
       "error": null
@@ -384,7 +409,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.0018379688262939453,
+      "parse_time": 0.0018711090087890625,
       "category": "PP [ K --> P Pel S]",
       "pattern": "K → X2 S",
       "error": null
@@ -394,7 +419,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.005967855453491211,
+      "parse_time": 0.005833148956298828,
       "category": "PP [ K --> P Pel S]",
       "pattern": "K → X2 S",
       "error": null
@@ -404,7 +429,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.005747079849243164,
+      "parse_time": 0.005733966827392578,
       "category": "PP [ K --> P S Pel Ket]",
       "pattern": "K → X1 X3",
       "error": null
@@ -414,7 +439,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.004277944564819336,
+      "parse_time": 0.005544185638427734,
       "category": "PP [ K --> P S Pel Ket]",
       "pattern": "K → X1 X3",
       "error": null
@@ -424,7 +449,27 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.010942459106445312,
+      "parse_time": 0.010339736938476562,
+      "category": "PP [ K --> P S Pel Ket]",
+      "pattern": "K → X1 X3",
+      "error": null
+    },
+    {
+      "sentence": "Di sok ento duren ne dasa bungkul dibi",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.00676417350769043,
+      "category": "PP [ K --> P S Pel Ket]",
+      "pattern": "K → X1 X3",
+      "error": null
+    },
+    {
+      "sentence": "Di kantong ento jinah ne dasa tali tuni",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.007296562194824219,
       "category": "PP [ K --> P S Pel Ket]",
       "pattern": "K → X1 X3",
       "error": null
@@ -434,7 +479,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.006994962692260742,
+      "parse_time": 0.007185935974121094,
       "category": "PP [ K --> P S Pel Ket]",
       "pattern": "K → X1 X3",
       "error": null
@@ -444,7 +489,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.004931926727294922,
+      "parse_time": 0.00429987907409668,
       "category": "PP [ K --> P S Pel Ket]",
       "pattern": "K → X1 X3",
       "error": null
@@ -454,7 +499,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.0045299530029296875,
+      "parse_time": 0.004939556121826172,
       "category": "PP [ K --> P S Pel Ket]",
       "pattern": "K → X1 X3",
       "error": null
@@ -464,7 +509,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.004359245300292969,
+      "parse_time": 0.004710674285888672,
       "category": "PP [ K --> P S Pel Ket]",
       "pattern": "K → X1 X3",
       "error": null
@@ -474,7 +519,17 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.005938053131103516,
+      "parse_time": 0.005877494812011719,
+      "category": "PP [ K --> P S Pel Ket]",
+      "pattern": "K → X1 X3",
+      "error": null
+    },
+    {
+      "sentence": "Ring sokasi bungane atanding dibi semeng",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "parse_time": 0.004632472991943359,
       "category": "PP [ K --> P S Pel Ket]",
       "pattern": "K → X1 X3",
       "error": null
@@ -484,7 +539,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.004851818084716797,
+      "parse_time": 0.004965782165527344,
       "category": "PP [ K --> P S Pel Ket]",
       "pattern": "K → X1 X3",
       "error": null
@@ -494,7 +549,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.019466161727905273,
+      "parse_time": 0.027252197265625,
       "category": "PP [ K --> P Pel S Ket]",
       "pattern": "K → X2 X4",
       "error": null
@@ -504,7 +559,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.00405430793762207,
+      "parse_time": 0.003927946090698242,
       "category": "PP [ K --> P Pel S Ket]",
       "pattern": "K → X2 X4",
       "error": null
@@ -514,7 +569,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.022521257400512695,
+      "parse_time": 0.025934934616088867,
       "category": "PP [ K --> P Pel S Ket]",
       "pattern": "K → X1 X3",
       "error": null
@@ -524,7 +579,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.00413203239440918,
+      "parse_time": 0.00503849983215332,
       "category": "PP [ K --> P Pel S Ket]",
       "pattern": "K → X2 X4",
       "error": null
@@ -534,7 +589,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.00452876091003418,
+      "parse_time": 0.004768848419189453,
       "category": "PP [ K --> P Pel S Ket]",
       "pattern": "K → X2 X4",
       "error": null
@@ -544,7 +599,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.003773927688598633,
+      "parse_time": 0.0050945281982421875,
       "category": "PP [ K --> P Pel S Ket]",
       "pattern": "K → X2 X4",
       "error": null
@@ -554,7 +609,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.0040128231048583984,
+      "parse_time": 0.006353616714477539,
       "category": "PP [ K --> P Pel S Ket]",
       "pattern": "K → X2 X4",
       "error": null
@@ -564,7 +619,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.007422447204589844,
+      "parse_time": 0.008585691452026367,
       "category": "PP [ K --> P Pel S Ket]",
       "pattern": "K → X2 X4",
       "error": null
@@ -574,7 +629,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.0038912296295166016,
+      "parse_time": 0.004109621047973633,
       "category": "PP [ K --> P Pel S Ket]",
       "pattern": "K → X2 X4",
       "error": null
@@ -584,7 +639,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.012566566467285156,
+      "parse_time": 0.012791156768798828,
       "category": "PP [ K --> P Pel S Ket]",
       "pattern": "K → X1 X3",
       "error": null
@@ -594,7 +649,7 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.0089874267578125,
+      "parse_time": 0.009104490280151367,
       "category": "PP [ K --> P Pel S Ket]",
       "pattern": "K → X2 X4",
       "error": null
@@ -604,9 +659,69 @@
       "expected": true,
       "actual": true,
       "correct": true,
-      "parse_time": 0.0075147151947021484,
+      "parse_time": 0.00903630256652832,
       "category": "PP [ K --> P Pel S Ket]",
       "pattern": "K → X2 X4",
+      "error": null
+    },
+    {
+      "sentence": "Duang dasa bungkul taluh siap di keranjang",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.009304046630859375,
+      "category": "NumP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "Limang diri sisya anyar di lapangan",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.005684614181518555,
+      "category": "NumP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "Duang dasa tali pis I Bapa di dompet",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.013706445693969727,
+      "category": "NumP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "Nem dasa kilo baat I Komang dibi",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.010193347930908203,
+      "category": "NumP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "Telung hektar linggah tanah I Made di uma",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.010530471801757812,
+      "category": "NumP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "Satus ukud bebek ne I Ketut di carik",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.010833978652954102,
+      "category": "NumP",
+      "pattern": null,
       "error": null
     },
     {
@@ -614,17 +729,27 @@
       "expected": false,
       "actual": false,
       "correct": true,
-      "parse_time": 0.012600421905517578,
+      "parse_time": 0.01205754280090332,
       "category": "NumP",
       "pattern": null,
       "error": null
     },
     {
-      "sentence": "Dagang canang meme tiang di peken",
+      "sentence": "Dagang  canang meme tiang di peken",
       "expected": false,
       "actual": false,
       "correct": true,
-      "parse_time": 0.00804448127746582,
+      "parse_time": 0.009166717529296875,
+      "category": "NP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "Bendega dane ring sisin pasihe",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.003118276596069336,
       "category": "NP",
       "pattern": null,
       "error": null
@@ -634,7 +759,37 @@
       "expected": false,
       "actual": false,
       "correct": true,
-      "parse_time": 0.006864786148071289,
+      "parse_time": 0.007274150848388672,
+      "category": "NP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "Panabuh  kendang  I  Bapa  di sanggar",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.007238149642944336,
+      "category": "NP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "Dokter mata bli tiang di klinik",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.005972385406494141,
+      "category": "NP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "Tukang tenun kain endek I Desak",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.016982078552246094,
       "category": "NP",
       "pattern": null,
       "error": null
@@ -644,8 +799,78 @@
       "expected": false,
       "actual": false,
       "correct": true,
-      "parse_time": 0.006258964538574219,
+      "parse_time": 0.0074274539947509766,
       "category": "NP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "Inguh pisan ia ngitungang piutang di jumah ne",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.0023627281188964844,
+      "category": "AdjP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "Sebet ati ne Kevin",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.0014455318450927734,
+      "category": "AdjP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "jegeg sajan i nyoman",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.0010597705841064453,
+      "category": "AdjP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "Miik ngalub ngebekin natah bunga sandat",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.005593061447143555,
+      "category": "AdjP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "Demen gati tiang ngajeng lawar",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.0003299713134765625,
+      "category": "AdjP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "Demen gati magending ia",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.00017023086547851562,
+      "category": "AdjP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "Galak sajan tamiu cicing ne di parumahan",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.0029256343841552734,
+      "category": "AdjP",
       "pattern": null,
       "error": null
     },
@@ -654,7 +879,7 @@
       "expected": false,
       "actual": false,
       "correct": true,
-      "parse_time": 0.001543283462524414,
+      "parse_time": 0.001621246337890625,
       "category": "VP",
       "pattern": null,
       "error": null
@@ -664,7 +889,7 @@
       "expected": false,
       "actual": false,
       "correct": true,
-      "parse_time": 0.0007679462432861328,
+      "parse_time": 0.0008790493011474609,
       "category": "VP",
       "pattern": null,
       "error": null
@@ -674,7 +899,17 @@
       "expected": false,
       "actual": false,
       "correct": true,
-      "parse_time": 0.0022428035736083984,
+      "parse_time": 0.0020651817321777344,
+      "category": "VP",
+      "pattern": null,
+      "error": null
+    },
+    {
+      "sentence": "Pecalang ne ulung di jalan",
+      "expected": false,
+      "actual": false,
+      "correct": true,
+      "parse_time": 0.0005772113800048828,
       "category": "VP",
       "pattern": null,
       "error": null
@@ -684,7 +919,7 @@
       "expected": false,
       "actual": false,
       "correct": true,
-      "parse_time": 0.001538991928100586,
+      "parse_time": 0.0018973350524902344,
       "category": "VP",
       "pattern": null,
       "error": null
@@ -694,7 +929,7 @@
       "expected": false,
       "actual": false,
       "correct": true,
-      "parse_time": 0.0025115013122558594,
+      "parse_time": 0.003039836883544922,
       "category": "VP",
       "pattern": null,
       "error": null
@@ -704,7 +939,7 @@
       "expected": false,
       "actual": false,
       "correct": true,
-      "parse_time": 0.0013887882232666016,
+      "parse_time": 0.001753091812133789,
       "category": "VP",
       "pattern": null,
       "error": null

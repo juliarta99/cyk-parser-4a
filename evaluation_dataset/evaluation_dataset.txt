@@ -10,7 +10,7 @@ VALID|Ring Jaba Tengah Gusti Ngurah
 VALID|Di Paon I Meme
 VALID|Ring pura I Nyoman
 VALID|Uli alas bet I Pekak
-VALID|Uli peken ia.
+VALID|Uli peken ia
 VALID|Saking Badung tiang
 VALID|Ring wantilan I Putu
 VALID|Uli alas I Gede
@@ -99,7 +99,7 @@ INVALID|Sebet ati ne Kevin
 INVALID|jegeg sajan i nyoman
 INVALID|Miik ngalub ngebekin natah bunga sandat
 INVALID|Demen gati tiang ngajeng lawar
-INVALID|Demen gati magending ia dugas ento
+INVALID|Demen gati magending ia
 INVALID|Galak sajan tamiu cicing ne di parumahan
 
 # VP
