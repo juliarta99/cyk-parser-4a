@@ -1,4 +1,3 @@
-i
 nyoman
 pekak
 meme
@@ -61,6 +60,8 @@ mbok
 gus
 mbah 
 ajik
+sebita
+sempidi
 biang
 bli
 kevin

@@ -15,6 +15,7 @@
 - [Cara Menjalankan](#cara-menjalankan)
 - [Struktur Project](#struktur-project)
 - [Dataset & Kamus Kata](#dataset--kamus-kata)
+- [Dataset Evaluasi](#dataset--evaluasi)
 - [Cara Kerja Algoritma](#cara-kerja-algoritma)
 - [Contoh Penggunaan](#contoh-penggunaan)
 - [Troubleshooting](#troubleshooting)
@@ -152,7 +153,7 @@ Jika tidak terbuka otomatis, buka browser dan akses `http://localhost:8501`
 
 ---
 
-## 📁 Struktur Project
+## Struktur Project
 
 ```
 cyk-parser-bahasa-bali/
@@ -337,33 +338,12 @@ evaluation_dataset/
 
 **Format File: `evaluation_dataset.txt`**
 
-Format sederhana tanpa deskripsi:
 ```
-LABEL|KALIMAT
-```
-
-**Contoh:**
-```txt
-# POLA DASAR
-VALID|ring sekolah murid
-VALID|ring rumah anak
-
-# INVALID - TIDAK ADA PREPOSISI
-INVALID|murid buku sekolah
-INVALID|anak makanan rumah
+VALID|KALIMAT|KOMPONEN
+INVALID|KALIMAT
 ```
 
-**Aturan:**
-- **LABEL**: VALID atau INVALID
-- **KALIMAT**: Kalimat Bahasa Bali
-- **Separator**: Pipe (`|`)
-- **Comment**: Baris dengan `#` = nama kategori
-
-**Statistik Dataset:**
-- Total: ~90 test cases
-- VALID: ~55 cases (61%)
-- INVALID: ~35 cases (39%)
-- Categories: 15+ kategori berbeda
+Detail lebih lanjut dapat dilihat pada [Dataset Evaluasi](#dataset--evaluasi)
 
 ---
 
@@ -438,7 +418,7 @@ File JSON yang di-generate otomatis saat menjalankan `evaluation.py`.
 
 ---
 
-## 📚 Dataset & Kamus Kata
+## Dataset & Kamus Kata
 
 ### Lokasi: `alphabets/`
 
@@ -492,6 +472,40 @@ carik
 banjar
 kandang  ← kata baru
 ```
+
+---
+
+## Dataset Evaluasi
+
+### Format Dataset: `evaluation_dataset.txt`
+
+```
+VALID|KALIMAT|KOMPONEN
+INVALID|KALIMAT
+```
+
+**Contoh:**
+```txt
+# PP [P S] - Preposisi + Subjek
+VALID|Ring sekolah murid|P S
+VALID|Di Paon I Meme|P S
+
+# PP [X1 Pel] - (P S) + Pelengkap
+VALID|Di carik sampi ne dadua|X1 Pel
+
+# INVALID - Struktur salah
+INVALID|murid buku sekolah
+```
+
+### 5 Komponen Pola Grammar
+
+| Komponen | Struktur | Contoh Kalimat |
+|----------|----------|----------------|
+| **P S** | Preposisi + Subjek | Ring sekolah murid |
+| **X1 Pel** | (P S) + Pelengkap | Di carik sampi ne dadua |
+| **X2 S** | (P Pel) + Subjek | Uli Bandung mobil I Made |
+| **X1 X3** | (P S) + (Pel Ket) | Ring pura pragina ne dasa dibi |
+| **X2 X4** | (P Pel) + (S Ket) | Di jumah laptop wayan jani |
 
 ---
 
