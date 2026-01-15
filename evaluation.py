@@ -94,7 +94,10 @@ class CYKEvaluator:
         pattern = self.normalize_pattern(pattern)
         
         # Check if contains "K" at the start (full derivation format)
-        parts = pattern.split()
+        if pattern is not None:
+            parts = pattern.split()
+        else:
+            parts = []
         if parts and parts[0] == 'K':
             # Remove "K" to get components only
             # "K P S" → "P S"
