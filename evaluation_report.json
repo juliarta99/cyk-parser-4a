@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-15T17:04:10.420322",
+  "timestamp": "2026-01-16T12:24:30.036513",
   "evaluation_mode": "component_pattern_validation",
   "note": "Pattern validation checks COMPONENTS only (e.g., P S not K → P S)",
   "summary": {
@@ -10,7 +10,7 @@
     "precision": 88.33333333333333,
     "recall": 100.0,
     "f1_score": 93.80530973451327,
-    "avg_parse_time": 0.005352979356592352
+    "avg_parse_time": 0.005398520014502786
   },
   "confusion_matrix": {
     "true_positive": 53,
@@ -127,7 +127,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.008880615234375,
+      "parse_time": 0.00759577751159668,
       "category": "PP [K --> P S]",
       "error": null
     },
@@ -142,7 +142,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.003625154495239258,
+      "parse_time": 0.0023336410522460938,
       "category": "PP [K --> P S]",
       "error": null
     },
@@ -157,7 +157,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0017228126525878906,
+      "parse_time": 0.0027933120727539062,
       "category": "PP [K --> P S]",
       "error": null
     },
@@ -172,7 +172,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0036957263946533203,
+      "parse_time": 0.004475831985473633,
       "category": "PP [K --> P S]",
       "error": null
     },
@@ -187,7 +187,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0012793540954589844,
+      "parse_time": 0.0011754035949707031,
       "category": "PP [K --> P S]",
       "error": null
     },
@@ -202,7 +202,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.001051187515258789,
+      "parse_time": 0.0023255348205566406,
       "category": "PP [K --> P S]",
       "error": null
     },
@@ -217,7 +217,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.002219676971435547,
+      "parse_time": 0.0031871795654296875,
       "category": "PP [K --> P S]",
       "error": null
     },
@@ -232,7 +232,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0019617080688476562,
+      "parse_time": 0.0016353130340576172,
       "category": "PP [K --> P S]",
       "error": null
     },
@@ -247,7 +247,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0016605854034423828,
+      "parse_time": 0.001986265182495117,
       "category": "PP [K --> P S]",
       "error": null
     },
@@ -262,7 +262,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.003680706024169922,
+      "parse_time": 0.005091667175292969,
       "category": "PP [K --> P S]",
       "error": null
     },
@@ -277,7 +277,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.001718759536743164,
+      "parse_time": 0.002100229263305664,
       "category": "PP [K --> P S]",
       "error": null
     },
@@ -292,7 +292,7 @@
       "correct": false,
       "pattern_match": false,
       "failure_reason": "Pattern mismatch: Expected 'P S', Got 'X1 Pel'",
-      "parse_time": 0.007916688919067383,
+      "parse_time": 0.007588863372802734,
       "category": "PP [K --> P S]",
       "error": null
     },
@@ -307,7 +307,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.009618282318115234,
+      "parse_time": 0.009816169738769531,
       "category": "PP [K --> X1 Pel]",
       "error": null
     },
@@ -322,7 +322,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.005048274993896484,
+      "parse_time": 0.005097627639770508,
       "category": "PP [K --> X1 Pel]",
       "error": null
     },
@@ -337,7 +337,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.008809328079223633,
+      "parse_time": 0.0076274871826171875,
       "category": "PP [K --> X1 Pel]",
       "error": null
     },
@@ -352,7 +352,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.004630565643310547,
+      "parse_time": 0.0042836666107177734,
       "category": "PP [K --> X1 Pel]",
       "error": null
     },
@@ -367,7 +367,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0034537315368652344,
+      "parse_time": 0.004717826843261719,
       "category": "PP [K --> X1 Pel]",
       "error": null
     },
@@ -382,7 +382,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.009822845458984375,
+      "parse_time": 0.008015632629394531,
       "category": "PP [K --> X1 Pel]",
       "error": null
     },
@@ -397,7 +397,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0035529136657714844,
+      "parse_time": 0.004380702972412109,
       "category": "PP [K --> X1 Pel]",
       "error": null
     },
@@ -412,7 +412,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0038564205169677734,
+      "parse_time": 0.0035016536712646484,
       "category": "PP [K --> X1 Pel]",
       "error": null
     },
@@ -427,7 +427,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.00432586669921875,
+      "parse_time": 0.0034694671630859375,
       "category": "PP [K --> X1 Pel]",
       "error": null
     },
@@ -442,7 +442,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.003276824951171875,
+      "parse_time": 0.004048824310302734,
       "category": "PP [K --> X1 Pel]",
       "error": null
     },
@@ -457,7 +457,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.004703998565673828,
+      "parse_time": 0.004285097122192383,
       "category": "PP [K --> X1 Pel]",
       "error": null
     },
@@ -472,7 +472,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.004071474075317383,
+      "parse_time": 0.003981113433837891,
       "category": "PP [K --> X1 Pel]",
       "error": null
     },
@@ -487,7 +487,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0044765472412109375,
+      "parse_time": 0.0039463043212890625,
       "category": "PP [K --> X2 S]",
       "error": null
     },
@@ -502,7 +502,7 @@
       "correct": false,
       "pattern_match": false,
       "failure_reason": "Pattern mismatch: Expected 'X2 S', Got 'X1 Pel'",
-      "parse_time": 0.007391214370727539,
+      "parse_time": 0.005296468734741211,
       "category": "PP [K --> X2 S]",
       "error": null
     },
@@ -517,7 +517,7 @@
       "correct": false,
       "pattern_match": false,
       "failure_reason": "Pattern mismatch: Expected 'X2 S', Got 'X1 Pel'",
-      "parse_time": 0.00631260871887207,
+      "parse_time": 0.0065288543701171875,
       "category": "PP [K --> X2 S]",
       "error": null
     },
@@ -532,7 +532,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0015900135040283203,
+      "parse_time": 0.001622915267944336,
       "category": "PP [K --> X2 S]",
       "error": null
     },
@@ -547,7 +547,7 @@
       "correct": false,
       "pattern_match": false,
       "failure_reason": "Pattern mismatch: Expected 'X2 S', Got 'X1 Pel'",
-      "parse_time": 0.007614850997924805,
+      "parse_time": 0.0072021484375,
       "category": "PP [K --> X2 S]",
       "error": null
     },
@@ -562,7 +562,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0033135414123535156,
+      "parse_time": 0.0030918121337890625,
       "category": "PP [K --> X2 S]",
       "error": null
     },
@@ -577,7 +577,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0030961036682128906,
+      "parse_time": 0.002537250518798828,
       "category": "PP [K --> X2 S]",
       "error": null
     },
@@ -592,7 +592,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0025336742401123047,
+      "parse_time": 0.001935720443725586,
       "category": "PP [K --> X2 S]",
       "error": null
     },
@@ -607,7 +607,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.005121469497680664,
+      "parse_time": 0.005136728286743164,
       "category": "PP [K --> X2 S]",
       "error": null
     },
@@ -622,7 +622,7 @@
       "correct": false,
       "pattern_match": false,
       "failure_reason": "Pattern mismatch: Expected 'X2 S', Got 'X1 Pel'",
-      "parse_time": 0.006638288497924805,
+      "parse_time": 0.005732059478759766,
       "category": "PP [K --> X2 S]",
       "error": null
     },
@@ -637,7 +637,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0023534297943115234,
+      "parse_time": 0.0020928382873535156,
       "category": "PP [K --> X2 S]",
       "error": null
     },
@@ -652,7 +652,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.006529808044433594,
+      "parse_time": 0.005795478820800781,
       "category": "PP [K --> X2 S]",
       "error": null
     },
@@ -667,7 +667,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0056531429290771484,
+      "parse_time": 0.005429267883300781,
       "category": "PP [K --> X1 X3]",
       "error": null
     },
@@ -682,7 +682,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.005463600158691406,
+      "parse_time": 0.0055751800537109375,
       "category": "PP [K --> X1 X3]",
       "error": null
     },
@@ -697,7 +697,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.010466575622558594,
+      "parse_time": 0.013029813766479492,
       "category": "PP [K --> X1 X3]",
       "error": null
     },
@@ -712,7 +712,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.008124828338623047,
+      "parse_time": 0.007395029067993164,
       "category": "PP [K --> X1 X3]",
       "error": null
     },
@@ -727,7 +727,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.007401704788208008,
+      "parse_time": 0.006810665130615234,
       "category": "PP [K --> X1 X3]",
       "error": null
     },
@@ -742,7 +742,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.007119178771972656,
+      "parse_time": 0.006745576858520508,
       "category": "PP [K --> X1 X3]",
       "error": null
     },
@@ -757,7 +757,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.004515409469604492,
+      "parse_time": 0.005176067352294922,
       "category": "PP [K --> X1 X3]",
       "error": null
     },
@@ -772,7 +772,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.00497746467590332,
+      "parse_time": 0.005095481872558594,
       "category": "PP [K --> X1 X3]",
       "error": null
     },
@@ -787,7 +787,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.004812955856323242,
+      "parse_time": 0.0055925846099853516,
       "category": "PP [K --> X1 X3]",
       "error": null
     },
@@ -802,7 +802,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.005686521530151367,
+      "parse_time": 0.003966569900512695,
       "category": "PP [K --> X1 X3]",
       "error": null
     },
@@ -817,7 +817,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0048122406005859375,
+      "parse_time": 0.00569605827331543,
       "category": "PP [K --> X1 X3]",
       "error": null
     },
@@ -832,7 +832,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.006555318832397461,
+      "parse_time": 0.004981279373168945,
       "category": "PP [K --> X1 X3]",
       "error": null
     },
@@ -847,7 +847,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.019405126571655273,
+      "parse_time": 0.02111339569091797,
       "category": "PP [K --> X2 X4]",
       "error": null
     },
@@ -862,7 +862,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.00407719612121582,
+      "parse_time": 0.004087924957275391,
       "category": "PP [K --> X2 X4]",
       "error": null
     },
@@ -877,7 +877,7 @@
       "correct": false,
       "pattern_match": false,
       "failure_reason": "Pattern mismatch: Expected 'X2 X4', Got 'X1 X3'",
-      "parse_time": 0.02180004119873047,
+      "parse_time": 0.028263330459594727,
       "category": "PP [K --> X2 X4]",
       "error": null
     },
@@ -892,7 +892,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.003888845443725586,
+      "parse_time": 0.003766775131225586,
       "category": "PP [K --> X2 X4]",
       "error": null
     },
@@ -907,7 +907,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.005490779876708984,
+      "parse_time": 0.0066301822662353516,
       "category": "PP [K --> X2 X4]",
       "error": null
     },
@@ -922,7 +922,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0035750865936279297,
+      "parse_time": 0.00397944450378418,
       "category": "PP [K --> X2 X4]",
       "error": null
     },
@@ -937,7 +937,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.004737138748168945,
+      "parse_time": 0.005705356597900391,
       "category": "PP [K --> X2 X4]",
       "error": null
     },
@@ -952,7 +952,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0071179866790771484,
+      "parse_time": 0.008235454559326172,
       "category": "PP [K --> X2 X4]",
       "error": null
     },
@@ -967,7 +967,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.004045724868774414,
+      "parse_time": 0.0064830780029296875,
       "category": "PP [K --> X2 X4]",
       "error": null
     },
@@ -982,7 +982,7 @@
       "correct": false,
       "pattern_match": false,
       "failure_reason": "Pattern mismatch: Expected 'X2 X4', Got 'X1 X3'",
-      "parse_time": 0.010999441146850586,
+      "parse_time": 0.010934114456176758,
       "category": "PP [K --> X2 X4]",
       "error": null
     },
@@ -997,7 +997,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.006916046142578125,
+      "parse_time": 0.007146596908569336,
       "category": "PP [K --> X2 X4]",
       "error": null
     },
@@ -1012,7 +1012,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.007653236389160156,
+      "parse_time": 0.006667375564575195,
       "category": "PP [K --> X2 X4]",
       "error": null
     },
@@ -1027,7 +1027,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.011484384536743164,
+      "parse_time": 0.010077476501464844,
       "category": "NumP",
       "error": null
     },
@@ -1042,7 +1042,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.007111549377441406,
+      "parse_time": 0.0057260990142822266,
       "category": "NumP",
       "error": null
     },
@@ -1057,7 +1057,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.010622978210449219,
+      "parse_time": 0.010952234268188477,
       "category": "NumP",
       "error": null
     },
@@ -1072,7 +1072,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.006980419158935547,
+      "parse_time": 0.006352424621582031,
       "category": "NumP",
       "error": null
     },
@@ -1087,7 +1087,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.009792804718017578,
+      "parse_time": 0.00859212875366211,
       "category": "NumP",
       "error": null
     },
@@ -1102,7 +1102,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.008780717849731445,
+      "parse_time": 0.008075714111328125,
       "category": "NumP",
       "error": null
     },
@@ -1117,7 +1117,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.008602619171142578,
+      "parse_time": 0.008880853652954102,
       "category": "NumP",
       "error": null
     },
@@ -1132,7 +1132,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.008268117904663086,
+      "parse_time": 0.007769346237182617,
       "category": "NP",
       "error": null
     },
@@ -1147,7 +1147,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0028443336486816406,
+      "parse_time": 0.0028045177459716797,
       "category": "NP",
       "error": null
     },
@@ -1162,7 +1162,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.007670402526855469,
+      "parse_time": 0.007686614990234375,
       "category": "NP",
       "error": null
     },
@@ -1177,7 +1177,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0053691864013671875,
+      "parse_time": 0.004896879196166992,
       "category": "NP",
       "error": null
     },
@@ -1192,7 +1192,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.006193637847900391,
+      "parse_time": 0.00662994384765625,
       "category": "NP",
       "error": null
     },
@@ -1207,7 +1207,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.01570415496826172,
+      "parse_time": 0.016681194305419922,
       "category": "NP",
       "error": null
     },
@@ -1222,7 +1222,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.005011320114135742,
+      "parse_time": 0.0044841766357421875,
       "category": "NP",
       "error": null
     },
@@ -1237,7 +1237,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0017194747924804688,
+      "parse_time": 0.0017502307891845703,
       "category": "AdjP",
       "error": null
     },
@@ -1252,7 +1252,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0014619827270507812,
+      "parse_time": 0.001283407211303711,
       "category": "AdjP",
       "error": null
     },
@@ -1267,7 +1267,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0005011558532714844,
+      "parse_time": 0.00044083595275878906,
       "category": "AdjP",
       "error": null
     },
@@ -1282,7 +1282,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.003926515579223633,
+      "parse_time": 0.004534006118774414,
       "category": "AdjP",
       "error": null
     },
@@ -1297,7 +1297,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0004458427429199219,
+      "parse_time": 0.0004067420959472656,
       "category": "AdjP",
       "error": null
     },
@@ -1312,7 +1312,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0002422332763671875,
+      "parse_time": 0.00020122528076171875,
       "category": "AdjP",
       "error": null
     },
@@ -1327,7 +1327,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0035104751586914062,
+      "parse_time": 0.0029256343841552734,
       "category": "AdjP",
       "error": null
     },
@@ -1342,7 +1342,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0005221366882324219,
+      "parse_time": 0.0008864402770996094,
       "category": "VP",
       "error": null
     },
@@ -1357,7 +1357,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0006215572357177734,
+      "parse_time": 0.0007483959197998047,
       "category": "VP",
       "error": null
     },
@@ -1372,7 +1372,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0021028518676757812,
+      "parse_time": 0.0019345283508300781,
       "category": "VP",
       "error": null
     },
@@ -1387,7 +1387,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.000560760498046875,
+      "parse_time": 0.0006811618804931641,
       "category": "VP",
       "error": null
     },
@@ -1402,7 +1402,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0008842945098876953,
+      "parse_time": 0.0006573200225830078,
       "category": "VP",
       "error": null
     },
@@ -1417,7 +1417,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.002035379409790039,
+      "parse_time": 0.0029320716857910156,
       "category": "VP",
       "error": null
     },
@@ -1432,7 +1432,7 @@
       "correct": true,
       "pattern_match": true,
       "failure_reason": null,
-      "parse_time": 0.0012402534484863281,
+      "parse_time": 0.0011386871337890625,
       "category": "VP",
       "error": null
     }

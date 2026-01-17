@@ -1,4 +1,4 @@
-# CYK Parser - Bahasa Bali Prepositional Phrase Validator
+# Seken App - Bahasa Bali Prepositional Phrase Validator
 
 > **Aplikasi Validasi Kalimat Bahasa Bali Berpredikat Frasa Preposisi**  
 > Implementasi Algoritma Cocke-Younger-Kasami (CYK) untuk parsing dan analisis struktur gramatikal kalimat Bahasa Bali menggunakan Context-Free Grammar dalam Chomsky Normal Form.
@@ -15,7 +15,7 @@
 - [Cara Menjalankan](#cara-menjalankan)
 - [Struktur Project](#struktur-project)
 - [Dataset & Kamus Kata](#dataset--kamus-kata)
-- [Dataset Evaluasi](#dataset--evaluasi)
+- [Dataset Evaluasi](#dataset-evaluasi)
 - [Cara Kerja Algoritma](#cara-kerja-algoritma)
 - [Contoh Penggunaan](#contoh-penggunaan)
 - [Troubleshooting](#troubleshooting)
@@ -24,18 +24,18 @@
 
 ## Tentang Aplikasi
 
-Aplikasi ini adalah implementasi parser bahasa formal untuk menganalisis struktur kalimat Bahasa Bali, khususnya kalimat yang berpredikat frasa preposisi. Menggunakan **Algoritma CYK (Cocke-Younger-Kasami)**, aplikasi dapat:
+Aplikasi ini adalah implementasi parser bahasa formal untuk menganalisis struktur kalimat Bahasa Bali, khususnya kalimat yang berpredikat frasa preposisi. Menggunakan **Algoritma CYK (Cocke Younger Kasami)**, aplikasi dapat:
 
 - Memvalidasi apakah kalimat sesuai dengan grammar yang ditentukan
 - Menganalisis struktur kalimat
-- Menampilkan parse tree (pohon penurunan)
-- Mengidentifikasi komponen kalimat (Subjek, Predikat, Pelengkap, Keterangan)
+- Menampilkan parse tree
+- Mengidentifikasi komponen kalimat
 - Visualisasi proses parsing dalam triangular table
 
 ### Latar Belakang
 
 Proyek ini dikembangkan sebagai bagian dari mata kuliah **Teori Bahasa dan Otomata**, dengan tujuan:
-1. Memahami konsep Context-Free Grammar (CFG)
+1. Memahami konsep Context Free Grammar (CFG)
 2. Mengimplementasikan Chomsky Normal Form (CNF)
 3. Menerapkan algoritma parsing CYK
 4. Menganalisis struktur bahasa alami (Bahasa Bali)
@@ -50,8 +50,8 @@ Proyek ini dikembangkan sebagai bagian dari mata kuliah **Teori Bahasa dan Otoma
 - Deteksi kata yang tidak dikenali
 
 ### 2. **Analisis Gramatikal Lengkap**
-- Parse tree visualization (pohon penurunan)
-- Pola kalimat (sentence pattern)
+- Parse tree visualization
+- Pola kalimat
 - Langkah-langkah derivasi
 - Komponen kalimat (frasa preposisional, subjek, pelengkap, keterangan)
 
@@ -103,8 +103,8 @@ File lengkap ada di `requirements.txt`
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/juliarta99/cyk-parser-4a.git
-cd cyk-parser-bahasa-bali
+git clone https://github.com/juliarta99/seken-app-4a.git
+cd seken-app-4a
 ```
 
 ### 2. Install Dependencies
@@ -156,7 +156,7 @@ Jika tidak terbuka otomatis, buka browser dan akses `http://localhost:8501`
 ## Struktur Project
 
 ```
-cyk-parser-bahasa-bali/
+seken-app-4a/
 │
 ├── 📄 main.py                       # Main application (Streamlit UI)
 ├── 📄 cyk_process.py                # CYK Algorithm implementation
@@ -177,7 +177,7 @@ cyk-parser-bahasa-bali/
 │   └── nountime.txt                 # Kata benda waktu
 │
 ├── 📂 evaluation_dataset/           # Dataset untuk testing
-│   └── evaluation_dataset.txt       # Test cases (LABEL|KALIMAT)
+│   └── evaluation_dataset.txt       # Test cases
 │
 ├── 📄 evaluation_report.json        # Hasil evaluasi (generated)
 ├── 📄 requirements.txt              # Python dependencies
@@ -212,7 +212,7 @@ streamlit run main.py
 
 ### **2. `cyk_process.py` - CYK Algorithm**
 
-Implementasi algoritma Cocke-Younger-Kasami untuk parsing.
+Implementasi algoritma Cocke Younger Kasami untuk parsing.
 
 **Fungsi Utama:**
 
@@ -220,7 +220,7 @@ Implementasi algoritma Cocke-Younger-Kasami untuk parsing.
 |--------|-----------|
 | `cyk_parse(words)` | Algoritma CYK utama, return table & backpointer |
 | `create_table(n)` | Membuat tabel n×n kosong |
-| `get_combinations(set_a, set_b)` | Gabungkan 2 set untuk aturan A→BC |
+| `get_combinations(set_a, set_b)` | Gabungkan 2 set untuk aturan A → B C |
 | `is_valid_sentence()` | Cek apakah kalimat valid |
 | `build_parse_tree()` | Rekonstruksi parse tree dari backpointer |
 | `get_sentence_pattern()` | Analisis pola kalimat |
@@ -259,7 +259,7 @@ start_symbol = ["K"]
 - `check_symbol(array)`: Cek apakah ada start symbol
 
 **CNF Rules:**
-1. **A → BC** (branching): Non-terminal → 2 non-terminal
+1. **A → B C** (branching): Non-terminal → 2 non-terminal
 2. **A → terminal** (lexical): Non-terminal → 1 kata
 
 ---
@@ -300,7 +300,6 @@ Sistem evaluasi otomatis untuk testing parser dengan metrics lengkap.
 - Hitung metrics: Accuracy, Precision, Recall, F1 Score
 - Generate confusion matrix
 - Export hasil ke JSON
-- Verbose output (print setiap test case)
 
 **Cara Menjalankan:**
 ```bash
@@ -343,7 +342,7 @@ VALID|KALIMAT|KOMPONEN
 INVALID|KALIMAT
 ```
 
-Detail lebih lanjut dapat dilihat pada [Dataset Evaluasi](#dataset--evaluasi)
+Detail lebih lanjut dapat dilihat pada [Dataset Evaluasi](#dataset-evaluasi)
 
 ---
 
@@ -351,64 +350,15 @@ Detail lebih lanjut dapat dilihat pada [Dataset Evaluasi](#dataset--evaluasi)
 
 File JSON yang di-generate otomatis saat menjalankan `evaluation.py`.
 
-**Struktur:**
-```json
-{
-  "timestamp": "2026-01-14T...",
-  "summary": {
-    "total_tests": 90,
-    "passed": 85,
-    "failed": 5,
-    "accuracy": 94.44,
-    "precision": 96.30,
-    "recall": 92.86,
-    "f1_score": 94.55,
-    "avg_parse_time": 0.0023
-  },
-  "confusion_matrix": {
-    "true_positive": 52,
-    "true_negative": 33,
-    "false_positive": 2,
-    "false_negative": 3
-  },
-  "category_stats": {
-    "POLA DASAR": {
-      "total": 8,
-      "passed": 8,
-      "failed": 0
-    },
-    ...
-  },
-  "test_cases": [
-    {
-      "sentence": "ring sekolah murid",
-      "expected": true,
-      "actual": true,
-      "correct": true,
-      "parse_time": 0.0015,
-      "category": "POLA DASAR",
-      "pattern": "K → P S",
-      "error": null
-    },
-    ...
-  ]
-}
-```
-
 **Kegunaan:**
 - Analisis mendalam hasil evaluasi
 - Tracking performa dari waktu ke waktu
-- Input untuk visualisasi/grafik
-- Dokumentasi untuk laporan
+- Input untuk visualisasi atau grafik
 
 ---
 
 **File yang di-ignore:**
 - Python cache (`__pycache__/`)
-- Virtual environment (`venv/`)
-- IDE config (`.vscode/`, `.idea/`)
-- OS files (`.DS_Store`)
-- Temporary files (`*.swp`, `*.log`)
 
 **File yang di-track:**
 - Source code (`.py`)
@@ -428,16 +378,16 @@ Dataset berisi kamus kata Bahasa Bali yang dikategorikan berdasarkan **Part of S
 
 | File | Kategori | Contoh Kata | Jumlah |
 |------|----------|-------------|--------|
-| **noun.txt** | Kata Benda | paon, jumah, carik | 100+ |
-| **verb.txt** | Kata Kerja | malajah, majalan | 50+ |
-| **adj.txt** | Kata Sifat | jegeg, gede, cenik | 50+ |
-| **prep.txt** | Preposisi | ring, ka | 10+ |
-| **pronoun.txt** | Kata Ganti | ia, tiang, ipun | 20+ |
-| **propnoun.txt** | Nama Diri | Bali, Jakarta, Made | 30+ |
-| **det.txt** | Determiner | ento, ne | 10+ |
-| **num.txt** | Numeralia | lelima, dadua, adiri | 20+ |
-| **adv.txt** | Adverbia | sesai, cepok | 20+ |
-| **nountime.txt** | Kata Waktu | dibi, tuni, semeng | 30+ |
+| **noun.txt** | Kata Benda | paon, jumah, carik | 140+ |
+| **verb.txt** | Kata Kerja | malajah, majalan | 35+ |
+| **adj.txt** | Kata Sifat | jegeg, gede, cenik | 20+ |
+| **prep.txt** | Preposisi | ring, ka | 5+ |
+| **pronoun.txt** | Kata Ganti | ia, tiang, ipun | 3+ |
+| **propnoun.txt** | Nama Diri | Bali, Jakarta, Made | 65+ |
+| **det.txt** | Determiner | ento, ne | 15+ |
+| **num.txt** | Numeralia | lelima, dadua, adiri | 55+ |
+| **adv.txt** | Adverbia | sesai, cepok | 5+ |
+| **nountime.txt** | Kata Waktu | dibi, tuni, semeng | 70+ |
 
 ### Format File
 
@@ -524,7 +474,7 @@ Frasa 2 kata
     ↓ gabung
 Frasa 3 kata
     ↓ gabung
-Kalimat lengkap ✓
+Kalimat lengkap
 ```
 
 #### **Langkah Algoritma:**
@@ -652,7 +602,7 @@ pip install streamlit
 2. Pastikan semua file .txt ada di dalamnya
 3. Jalankan aplikasi dari root directory:
    ```bash
-   cd path/to/cyk-parser-bahasa-bali
+   cd path/to/seken-app-bahasa-bali
    streamlit run dev.py
    ```
 
@@ -698,8 +648,8 @@ pip install streamlit
 Untuk pertanyaan, saran, atau bug report:
 
 - **Email:** adij4255@gmail.com
-- **GitHub Issues:** [Create Issue](https://github.com/juliarta99/cyk-parser-4a/issues)
-- **Discussion:** [GitHub Discussions](https://github.com/juliarta99/cyk-parser-4a/discussions)
+- **GitHub Issues:** [Create Issue](https://github.com/juliarta99/seken-app-4a/issues)
+- **Discussion:** [GitHub Discussions](https://github.com/juliarta99/seken-app-4a/discussions)
 
 **Last Updated:** Januari 2026
 
@@ -707,4 +657,4 @@ Untuk pertanyaan, saran, atau bug report:
 
 Made with ❤️ by Kelompok 4A
 
-[Back to Top](#cyk-parser---bahasa-bali-prepositional-phrase-validator)
+[Back to Top](#seken-app---bahasa-bali-prepositional-phrase-validator)

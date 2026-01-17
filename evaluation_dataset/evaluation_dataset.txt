@@ -1,8 +1,10 @@
 # ==========================================
 # DATASET EVALUASI
 # ==========================================
-# Format: LABEL|KALIMAT
+# Format Kalimat VALID: LABEL|KALIMAT|POLA KALIMAT
+# Format Kalimat INVALID: LABEL|KALIMAT
 # LABEL: VALID atau INVALID
+# POLA KALIMAT: P S | X1 Pel | X2 S | X1 X3 | X2 X4
 # ==========================================
 
 # PP [K --> P S]
